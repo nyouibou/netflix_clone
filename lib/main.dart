@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_clone/view/splashscreen/splashscreen.dart';
 
 void main() {
   runApp(const Netflix());
@@ -10,7 +11,8 @@ class Netflix extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Homescreen(),
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
     );
   }
 }
